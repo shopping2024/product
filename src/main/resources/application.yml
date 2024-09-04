@@ -1,0 +1,19 @@
+
+
+# DataSource settings
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/product_catagory
+    username: postgres
+    password: postgres
+  application:
+      name: PRODUCT-SERVICE
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8090
+
